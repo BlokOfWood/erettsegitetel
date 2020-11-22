@@ -14,11 +14,11 @@ p{
 }
 footer{
   width: 100%;
-  background-color: lightsteelblue;
+  background-color: gray;
   position: fixed;
   bottom: 0;
   padding-left:2vw;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
 }
 .nav-link{
   font-size: 1.25rem;
@@ -38,4 +38,14 @@ h2{
   margin: auto;
   font-size: 1.5rem;
   margin-top: 3vh;
+}
+
+label{
+  height: auto;
+  font-size: 1.5vw;
+}
+
+input{
+  height:auto;
+  font-size: 1.5vw;
 }
