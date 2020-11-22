@@ -4,10 +4,12 @@ function ResultCalculation(){
     let pontszam2 = parseInt(document.getElementById("Pontszam2").value);
     let pontszam3 = parseInt(document.getElementById("Pontszam3").value);
     let pontszam4 = parseInt(document.getElementById("Pontszam4").value);
+
     if(isNaN(pontszam1)) pontszam1 = 0;
     if(isNaN(pontszam2)) pontszam2 = 0;
     if(isNaN(pontszam3)) pontszam3 = 0;
     if(isNaN(pontszam4)) pontszam4 = 0;
+
     if(pontszam1 < 0 || pontszam1 > 40)
     {
         document.getElementById("végeredmény").innerHTML = "A megadott hálózati ismeretek pontszám helytelen";
@@ -28,8 +30,55 @@ function ResultCalculation(){
         document.getElementById("végeredmény").innerHTML = "A megadott szóbeli vizsga pontszám helytelen";
         return;
     }
-    összeg = pontszam1 + pontszam2 + pontszam3 + pontszam4;
-    document.getElementById("végeredmény").innerHTML = "Pontszám: "+összeg+"/150"
 
-    
+    összeg = pontszam1 + pontszam2 + pontszam3 + pontszam4;
+    document.getElementById("végeredmény").innerHTML = "Pontszám: " + összeg + "/150";
+
+    var percentage = Math.round(összeg/150 * 100 * 100)/100; 
+    if(document.getElementById('kozepszintu').checked)
+    {
+        if(percentage <= 24)
+        {
+            document.getElementById('Érdemjegy').innerHTML = "Érdemjegy: Elégtelen ("+percentage+")"; 
+        }
+        else if(percentage <= 39)
+        {
+            document.getElementById('Érdemjegy').innerHTML = "Érdemjegy: Elégséges ("+percentage+")"; 
+        }
+        else if(percentage <= 59)
+        {
+            document.getElementById('Érdemjegy').innerHTML = "Érdemjegy: Közepes ("+percentage+")"; 
+        }
+        else if(percentage <= 79)
+        {
+            document.getElementById('Érdemjegy').innerHTML = "Érdemjegy: Jó ("+percentage+")"; 
+        }
+        else 
+        {
+            document.getElementById('Érdemjegy').innerHTML = "Érdemjegy: Jeles ("+percentage+")"; 
+        }
+    } 
+    else
+    {
+        if(percentage <= 24)
+        {
+            document.getElementById('Érdemjegy').innerHTML = "Érdemjegy: Elégtelen ("+percentage+")"; 
+        }
+        else if(percentage <= 32)
+        {
+            document.getElementById('Érdemjegy').innerHTML = "Érdemjegy: Elégséges ("+percentage+")"; 
+        }
+        else if(percentage <= 46)
+        {
+            document.getElementById('Érdemjegy').innerHTML = "Érdemjegy: Közepes ("+percentage+")"; 
+        }
+        else if(percentage <= 59)
+        {
+            document.getElementById('Érdemjegy').innerHTML = "Érdemjegy: Jó ("+percentage+")"; 
+        }
+        else 
+        {
+            document.getElementById('Érdemjegy').innerHTML = "Érdemjegy: Jeles ("+percentage+")"; 
+        }
+    }
 }
