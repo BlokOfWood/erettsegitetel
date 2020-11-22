@@ -22,7 +22,7 @@ var Quiz = [
     {
         Question: "Leggyorsabb háttértár a felsoroltak közül?",
         Answers: ["Merevlemez", "DVD", "Blue-ray", "SSD"],
-        AnswerHash: "82404"
+        AnswerHash: "51"
     }
 ]
 function init()

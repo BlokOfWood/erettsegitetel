@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Informatika Éretsségi Tétel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navigationbar navbar navbar-expand navbar-dark bg-dark">
+        <ul class="navbar-nav row">
+            <li class="nav-item active col">
+                <a class="nav-link" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item active col">
+                <a class="nav-link" href="beüzemelés.html">Beüzemelés</a>
+            </li>
+            <li class="nav-item active col">
+                <a class="nav-link" href="csatolofelületek.html">Csatolófelületek</a>
+            </li>
+            <li class="nav-item active col">
+                <a class="nav-link" href="karbantartas.html">Karbantartás</a>
+            </li>
+            <li class="nav-item active col">
+                <a class="nav-link" href="pontozás.html">Pontozás</a>
+            </li>
+            <li class="nav-item active col">
+                <a class="nav-link" href="quiz.html">Tesztkérdések</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Számítógépen belüli csatolófelületek</h1>
+    <h2>IDE (PATA)</h2>
+    <p>
+        Az IDE (PATA, Parallel ATA) csatlakozót a Western Digital és a Compaq fejlesztette közösen, 1986-ban. Ez egy
+        párhuzamos csatlakozó, amely lehet 40 vagy 80 eres. Eredetileg 8.3 MB/s volt a maximum sebessége, legutolsó
+        változatának 100 MB/s. Régebben nagyon sok helyen használták, de a SATA leváltotta és ma már nagyon keveset
+        használt.</p>
+    <h2>SATA</h2>
+    <p>
+        Az ezt leváltó SATA (Serial ATA) a PATA-val ellentétben egy soros csatlakozó, amely már eleinte 157 MB/s maximum
+        sebességgel rendelkezett, jóval túl lépve az IDE későbbi verzióinak maximum sebességét. Jelenlegi leggyorsabb
+        változata a SATA 3.2, már 16 Gb/s sebességű (2 GB/s). De legtöbbet a SATA 3.0 használt. Képes hot swapolásra,
+        amely azt jelenti, hogy ha helyesen van konfigurálva, cserélni lehet SATA eszközöket működő számítógépben. Ez a
+        funkció inkább szervereknél jellemző. Széleskörűen elterjedt asztali számítógépekben és szerverekben is
+        viszonylag olcsó ára miatt és egyszerű kezelhetősége miatt.
+    </p>
+    <h1>Számítógépen kívűli csatolófelületek</h1>
+    <h2>USB</h2>
+    <p>
+        USB-n keresztül általában külső merevlemezek kapcsolódnak vagy SATA-USB átalakítón keresztül belső merevlemezek.
+    </p>
+    <h2>eSATA</h2>
+    <p>
+        Az eSATA csatlakozó nagyon hasonló a SATA csatlakozóhoz és sebessége és hasonló. Abból eredően, hogy az USB az
+        összes csatlakoztatott eszköz között osztja sebességét és az eSATA nem, ezért gyorsabb külső meghajtók esetén a
+        maximum sebesség garantálásához szükséges.</p>
+    <h2>LAN</h2>
+    <p>
+        Az interneten keresztüli merevlemez csatlakoztatás sebesség szempontból előnyös hiszen a mai hálózati sebességek
+        (1 gb/s, 10 gb/s, 100 gb/s) bizonyos esetekbe megközelítik, gyorsabb hálózatoknál meghaladják a számítógépen
+        belüli sebességeket. Legfőbb hátrányuk az elérési idő, hiszen a SATA vagy IDE max 1 méteréhez képest sokkal
+        nagyobb távokat kell meg tennie a jeleknek. Cserébe a hálózaton belüli összes gépnek elérhető.
+    </p>
+    <footer>Készítette: Pap Sándor Dániel</footer>
+</body>
+<script src="java.js"></script>
+
+</html>

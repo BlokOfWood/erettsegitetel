@@ -20,6 +20,12 @@
                 <a class="nav-link" href="beüzemelés.html">Beüzemelés</a>
             </li>
             <li class="nav-item active col">
+                <a class="nav-link" href="csatolofelületek.html">Csatolófelületek</a>
+            </li>
+            <li class="nav-item active col">
+                <a class="nav-link" href="karbantartas.html">Karbantartás</a>
+            </li>
+            <li class="nav-item active col">
                 <a class="nav-link" href="pontozás.html">Pontozás</a>
             </li>
             <li class="nav-item active col">
@@ -27,8 +33,31 @@
             </li>
         </ul>
     </nav>
-    <h1 class="title">Merevlemez üzembe helyezése</h1>
-    <h2 class="title">IT Érettségi 6.tétel</h2>
+    <h1>Beüzemelés</h1>
+    <h2>BIOS konfiguráció</h2>
+    <p>
+        A BIOS-ban konfigurálható a merevlemezek közt RAID. A RAID az több háttértár egy logikai háttértárrá kombinálása
+        valamilyen szabály szerint (például a RAID 1 az az adatok több meghajtóra tükrözése azért, hogy ha az egyik
+        elromlik a többi RAID 1-ben lévő tárolóeszközön megmarad a tárolt adat). SATA meghajtók esetén be lehet
+        kapcsolni a SMART(Self-Monitoring, Analysis and Reporting Technology)-t, amely a meghajtó állapotát figyeli és
+        jelzi, hogyha a merevlemez meghibásodott. A meghajtó kontrollert is be lehet állítani, IDE-re vagy a manapság
+        használt AHCI-re, mely a SATA által nyújtott funkciókat ki tudja használni.
+    </p>
+    <h2>Formázás</h2>
+    <p>
+        Miután a BIOS beli konfiguráció megtörtént, a meghajtót formázni kell. A formázás a merevlemez vagy bármilyen
+        háttértár particionálásra való felkészítése, általában egy fájlrendszer létrehozásával jár. A formázás régebben
+        alacsony szintű formázást jelentett, de 1980-1990 óta már csak a gyárban végeznek alacsony szintű formázást és
+        mire megérkezik a felhasználóhoz a meghajtó, addigra már megtörtént és a felhasználónak nem ajánlott és legtöbb
+        esetben nem is lehet elvégeznie. Csak gyári állapotba állítja vissza a rendszer a merevlemezt.</p>
+    <h2>Particionálás</h2>
+    <p>
+        Formázás után következik a particionálás. A particionálás a lemezen egy vagy több használható régió létrehozása.
+        A lemezen létre lehet hozni elsődleges vagy kiterjesztett partíciókat. Az elsődleges partíciók az MPT(Master
+        Partition Table, fő partíciós tábla)-ben találhatóak. A merevlemezen maximum 4 elsődleges partíció hozható
+        létre. Kiterjesztett partícióból csak egy, viszont ez felbontható több logikai partícióra. A partíció, amelyről
+        az operációs rendszer betöltése történik az aktív partíció.
+    </p>
     <footer>Készítette: Pap Sándor Dániel</footer>
 </body>
 <script src="java.js"></script>

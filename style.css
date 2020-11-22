@@ -1,7 +1,6 @@
 .title{
   font-size: 2rem;
   margin-top: 1vw;
-  text-align: center;
 }
 body{
   background-color: lightgray;
@@ -9,7 +8,7 @@ body{
 p{
   font-size: 1rem;
   margin: auto;
-  margin-top: 4rem;
+  margin-bottom: 4rem;
   text-align: center;
   width:80vw;
 }
@@ -28,4 +27,15 @@ footer{
 .navbar-nav{
   margin:auto;
   text-align: center;
+}
+h1{
+  text-align: center;
+  margin: auto;
+  margin-top: 4vh;
+}
+h2{
+  text-align: center;
+  margin: auto;
+  font-size: 1.5rem;
+  margin-top: 3vh;
 }
