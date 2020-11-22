@@ -33,8 +33,30 @@
             </li>
         </ul>
     </nav>
+    <form>
+        <p style="margin-left:3vw; text-align: left;">
+            <label for="Pontszam1">Hálózati ismeretek</label>
+            <input type="number" min="0" max="40" id="Pontszam1" onchange="ResultCalculation()">
+            <label for="Pontszam1">/40</label>
+            <br>
+            <label for="Pontszam2">Programozás</label>
+            <input type="number" min="0" max="40" id="Pontszam2" onchange="ResultCalculation()">
+            <label for="Pontszam1">/40</label>
+            <br>
+            <label for="Pontszam3" >Weboldalak kódolása, adatbázis-kezelés</label>
+            <input type="number" min="0" max="40" id="Pontszam3" onchange="ResultCalculation()">
+            <label for="Pontszam1">/40</label>
+            <br>
+            <label for="Pontszam1">Szóbeli vizsga</label>
+            <input type="number" min="0" max="30" id="Pontszam4" onchange="ResultCalculation()">
+            <label for="Pontszam1">/30</label>
+            <br>
+            <label id="végeredmény">Pontszám: 0/150</label>
+        </p>
+        
+    </form>
     <footer>Készítette: Pap Sándor Dániel</footer>
 </body>
-<script src="java.js"></script>
+<script src="pontszám.js"></script>
 
 </html>
